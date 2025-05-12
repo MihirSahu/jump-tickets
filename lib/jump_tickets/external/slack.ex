@@ -134,7 +134,10 @@ defmodule JumpTickets.External.Slack do
     end
   end
 
-  def post_message("" <> _, text), do: nil
+  #def post_message("" <> _, text) do
+  #  IO.puts("Posting message : #{text}")
+  #  {:error, :invalid_slack_channel_url}
+  #end
 
   @doc """
   Posts a message to a channel
